@@ -12,14 +12,19 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+from environ import Env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
+env = Env()
+env_path = BASE_DIR / '.env'
+if env_path.exists():
+    with env_path.open('rt', encoding='utf8') as f:
+        env.read_env(f, overwrite=True)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ddt%*5p5z%9nkw2@d17w(3s25*5_o3(8bk(y+)o4tayrr8w$b+'
+SECRET_KEY = env.str('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -116,6 +121,13 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+# AWS settings
+
+S3_BUCKET_NAME = env.str('S3_BUCKET_NAME')
+S3_ACCESS_KEY = env.str('S3_ACCESS_KEY')
+S3_SECRET_KEY = env.str('S3_SECRET_KEY')
+S3_REGION_STATIC = env.str('S3_REGION_STATIC')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
