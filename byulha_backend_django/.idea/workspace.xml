@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ac9b17-d679-4306-8b29-e8192abae9aa" name="변경" comment="Feat: websocket 연결">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/classifier/image_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classifier/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/byulha_backend_django/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/byulha_backend_django/asgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byulha_backend_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/byulha_backend_django/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byulha_backend_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/byulha_backend_django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/consumers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/routing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/templates/classifier/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/templates/classifier/room.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/consumers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/middleware.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/routing.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +26,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -39,43 +33,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;dwd9999&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="7f135f71-9326-41eb-b6ae-77416198574d" />
-        <option name="url" value="https://github.com/dwd9999/byulha-backend-django.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2YkCQSoJQkLkSvhwJzjR50DBN0Z" />
+  <component name="ProjectId" id="2Yv20dfpXY1LAKBD3onYl88wM0t" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/10ohj/Desktop/Study/TABA6&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/10ohj/Desktop/Study/Django/websocket_project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -87,13 +71,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="byulha_backend_django.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\10ohj\Desktop\Study\TABA6\TABA_project\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (TABA_project)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8082" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -107,43 +92,42 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="c1ac9b17-d679-4306-8b29-e8192abae9aa" name="변경" comment="" />
-      <created>1701060173386</created>
+      <changelist id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="" />
+      <created>1701391510477</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701060173386</updated>
-      <workItem from="1701060174762" duration="12006000" />
-      <workItem from="1701073844543" duration="55000" />
-      <workItem from="1701131819071" duration="5798000" />
+      <updated>1701391510477</updated>
+      <workItem from="1701391512089" duration="1357000" />
+      <workItem from="1701393502333" duration="4155000" />
+      <workItem from="1701405134906" duration="8786000" />
+      <workItem from="1701417268667" duration="686000" />
+      <workItem from="1701524217784" duration="21000" />
+      <workItem from="1701648681491" duration="6957000" />
+      <workItem from="1701671528506" duration="2850000" />
+      <workItem from="1701740220625" duration="608000" />
+      <workItem from="1701756344541" duration="2314000" />
+      <workItem from="1701765292297" duration="772000" />
+      <workItem from="1701766290021" duration="5000" />
+      <workItem from="1701840942168" duration="188000" />
+      <workItem from="1701841735957" duration="255000" />
+      <workItem from="1701842000114" duration="866000" />
+      <workItem from="1701842882391" duration="935000" />
+      <workItem from="1701843835935" duration="5151000" />
     </task>
-    <task id="LOCAL-00001" summary="Feat: 프로젝트 시작">
-      <option name="closed" value="true" />
-      <created>1701061258987</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1701061258987</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Feat: websocket 연결">
-      <option name="closed" value="true" />
-      <created>1701073738928</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1701073738928</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Feat: 프로젝트 시작" />
-    <MESSAGE value="Feat: websocket 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: websocket 연결" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/byulha_backend_django$Test__classifier_tests.coverage" NAME="Test: classifier.tests 커버리지 결과" MODIFIED="1701064085108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

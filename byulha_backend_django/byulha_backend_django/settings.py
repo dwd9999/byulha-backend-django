@@ -10,31 +10,30 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
+import pymysql
 from pathlib import Path
-
-from environ import Env
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = Env()
-env_path = BASE_DIR / '.env'
-if env_path.exists():
-    with env_path.open('rt', encoding='utf8') as f:
-        env.read_env(f, overwrite=True)
+load_dotenv()
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
 INSTALLED_APPS = [
-    'daphne',
     'classifier',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,7 +44,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'classifier.middleware.IpRestrictorMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -74,22 +72,19 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = 'byulha_backend_django.asgi.application'
 WSGI_APPLICATION = 'byulha_backend_django.wsgi.application'
-
-CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels.layers.InMemoryChannelLayer',
-    },
-}
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': os.environ.get('DB_ENGINE'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
     }
 }
 
@@ -122,12 +117,11 @@ USE_I18N = True
 
 USE_TZ = True
 
-# AWS settings
-
-S3_BUCKET_NAME = env.str('S3_BUCKET_NAME')
-S3_ACCESS_KEY = env.str('S3_ACCESS_KEY')
-S3_SECRET_KEY = env.str('S3_SECRET_KEY')
-S3_REGION_STATIC = env.str('S3_REGION_STATIC')
+# S3 Settings
+S3_BUCKET_NAME = os.environ.get('S3_BUCKET_NAME')
+S3_ACCESS_KEY = os.environ.get('S3_ACCESS_KEY')
+S3_SECRET_KEY = os.environ.get('S3_SECRET_KEY')
+S3_REGION_STATIC = os.environ.get('S3_REGION_STATIC')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
