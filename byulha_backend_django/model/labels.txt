@@ -1,17 +1,11 @@
-0 윌스미스
-1 톰 행크스
-2 톰 크루즈
-3 Scarlett Johansson
-4 Sandra Bullock
-5 Robert Downey Jr
-6 Nicole Kidman
-7 Natalie Portman
-8 Megan Fox
-9 Leonardo Dicaprio
-10 Kate Winslet
-11 Johnny Depp
-12 Jennifer Lawrence
-13 Hugh Jackman
-14 Denzel Washington
-15 Brad Pitt
-16 Angelina Jolie
+0 중후한 이미지
+1 스포티한 이미지
+2 상남자 이미지
+3 관능적인 이미지
+4 발랄한, 귀여운 이미지
+5 단아한, 청순한 이미지
+6 우아한 이미지
+7 중성적인 이미지
+8 섹시한 이미지
+9 세련된, 깔끔한 이미지
+10 편안한, 캐주얼한 이미지

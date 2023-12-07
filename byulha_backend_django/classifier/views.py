@@ -19,13 +19,13 @@ def post(request):
         img_model(response['Body'])
 
         # 모델
-        category_name = 'SPORTY'
+        category_name = 'SPORTY:50,asdf:49.7,werscv:30'
 
         # 데이터 json 형식 변환
         data_to_send = {
             'nickname': request_json['nickname'],
             'fileId': request_json['fileId'],
-            'category_name': category_name,
+            'category_percent': category_name,
         }
         print(data_to_send)
 
