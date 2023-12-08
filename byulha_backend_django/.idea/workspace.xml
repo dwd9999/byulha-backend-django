@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Feat: 모델 반환 형식 콜론 추가">
-      <change beforePath="$PROJECT_DIR$/classifier/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/views.py" afterDir="false" />
+    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Docs: 불필요 주석 제거">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/image_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/image_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +121,7 @@
       <workItem from="1701842882391" duration="935000" />
       <workItem from="1701843835935" duration="10176000" />
       <workItem from="1701908975380" duration="9747000" />
-      <workItem from="1701995362368" duration="11429000" />
+      <workItem from="1701995362368" duration="11765000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: Websocket 대신 Post 메시지 사용">
       <option name="closed" value="true" />
@@ -202,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702015412869</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Docs: 불필요 주석 제거">
+      <option name="closed" value="true" />
+      <created>1702015571626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702015571626</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +239,7 @@
     <MESSAGE value="Refactor: View 코드 개선" />
     <MESSAGE value="Feat: 모델 라벨 영어화" />
     <MESSAGE value="Feat: 모델 반환 형식 콜론 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: 모델 반환 형식 콜론 추가" />
+    <MESSAGE value="Docs: 불필요 주석 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docs: 불필요 주석 제거" />
   </component>
 </project>
