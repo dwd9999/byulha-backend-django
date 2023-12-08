@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Docs: 불필요 주석 제거">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/image_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/image_model.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dwd9999&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7f135f71-9326-41eb-b6ae-77416198574d" />
+        <option name="url" value="https://github.com/dwd9999/byulha-backend-django.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Yv20dfpXY1LAKBD3onYl88wM0t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/10ohj/Desktop/Study/Django/websocket_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="byulha_backend_django" type="Python.DjangoServer" factoryName="Django server">
+      <module name="byulha_backend_django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="byulha_backend_django.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\10ohj\Desktop\Study\TABA6\TABA_project\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (TABA_project)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8082" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="" />
+      <created>1701391510477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701391510477</updated>
+      <workItem from="1701391512089" duration="1357000" />
+      <workItem from="1701393502333" duration="4155000" />
+      <workItem from="1701405134906" duration="8786000" />
+      <workItem from="1701417268667" duration="686000" />
+      <workItem from="1701524217784" duration="21000" />
+      <workItem from="1701648681491" duration="6957000" />
+      <workItem from="1701671528506" duration="2850000" />
+      <workItem from="1701740220625" duration="608000" />
+      <workItem from="1701756344541" duration="2314000" />
+      <workItem from="1701765292297" duration="772000" />
+      <workItem from="1701766290021" duration="5000" />
+      <workItem from="1701840942168" duration="188000" />
+      <workItem from="1701841735957" duration="255000" />
+      <workItem from="1701842000114" duration="866000" />
+      <workItem from="1701842882391" duration="935000" />
+      <workItem from="1701843835935" duration="10176000" />
+      <workItem from="1701908975380" duration="9747000" />
+      <workItem from="1701995362368" duration="11765000" />
+    </task>
+    <task id="LOCAL-00001" summary="Feat: Websocket 대신 Post 메시지 사용">
+      <option name="closed" value="true" />
+      <created>1701851189342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701851189342</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Feat: 이미지 모델 변경">
+      <option name="closed" value="true" />
+      <created>1701931661217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701931661217</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Feat: 이미지 모델 함수화 및 경로 수정">
+      <option name="closed" value="true" />
+      <created>1701997608057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701997608057</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix: 라벨 텍스트 수정">
+      <option name="closed" value="true" />
+      <created>1702013290386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013290386</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Feat: 모델 결과값 서식 통일">
+      <option name="closed" value="true" />
+      <created>1702013494229</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013494229</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat: Tensorflow 쓰레드 설정">
+      <option name="closed" value="true" />
+      <created>1702013545560</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013545560</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactor: 이미지 모델 코드 주석 추가 및 개선">
+      <option name="closed" value="true" />
+      <created>1702013730264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013730264</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactor: View 코드 개선">
+      <option name="closed" value="true" />
+      <created>1702014456267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702014456267</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Feat: 모델 라벨 영어화">
+      <option name="closed" value="true" />
+      <created>1702015394938</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702015394938</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Feat: 모델 반환 형식 콜론 추가">
+      <option name="closed" value="true" />
+      <created>1702015412869</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702015412869</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Docs: 불필요 주석 제거">
+      <option name="closed" value="true" />
+      <created>1702015571626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702015571626</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat: Websocket 대신 Post 메시지 사용" />
+    <MESSAGE value="Feat: 이미지 모델 변경" />
+    <MESSAGE value="Feat: 이미지 모델 함수화 및 경로 수정" />
+    <MESSAGE value="Fix: 라벨 텍스트 수정" />
+    <MESSAGE value="Feat: 모델 결과값 서식 통일" />
+    <MESSAGE value="Feat: Tensorflow 쓰레드 설정" />
+    <MESSAGE value="Refactor: 이미지 모델 코드 주석 추가 및 개선" />
+    <MESSAGE value="Refactor: View 코드 개선" />
+    <MESSAGE value="Feat: 모델 라벨 영어화" />
+    <MESSAGE value="Feat: 모델 반환 형식 콜론 추가" />
+    <MESSAGE value="Docs: 불필요 주석 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docs: 불필요 주석 제거" />
+  </component>
+</project>
