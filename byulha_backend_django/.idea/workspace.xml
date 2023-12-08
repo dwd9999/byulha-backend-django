@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Fix: 라벨 텍스트 수정">
+    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Refactor: 이미지 모델 코드 주석 추가 및 개선">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/image_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/image_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,7 @@
       <workItem from="1701842882391" duration="935000" />
       <workItem from="1701843835935" duration="10176000" />
       <workItem from="1701908975380" duration="9747000" />
-      <workItem from="1701995362368" duration="9222000" />
+      <workItem from="1701995362368" duration="10000000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: Websocket 대신 Post 메시지 사용">
       <option name="closed" value="true" />
@@ -156,7 +155,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702013290386</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Feat: 모델 결과값 서식 통일">
+      <option name="closed" value="true" />
+      <created>1702013494229</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013494229</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat: Tensorflow 쓰레드 설정">
+      <option name="closed" value="true" />
+      <created>1702013545560</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013545560</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactor: 이미지 모델 코드 주석 추가 및 개선">
+      <option name="closed" value="true" />
+      <created>1702013730264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013730264</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +201,9 @@
     <MESSAGE value="Feat: 이미지 모델 변경" />
     <MESSAGE value="Feat: 이미지 모델 함수화 및 경로 수정" />
     <MESSAGE value="Fix: 라벨 텍스트 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: 라벨 텍스트 수정" />
+    <MESSAGE value="Feat: 모델 결과값 서식 통일" />
+    <MESSAGE value="Feat: Tensorflow 쓰레드 설정" />
+    <MESSAGE value="Refactor: 이미지 모델 코드 주석 추가 및 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor: 이미지 모델 코드 주석 추가 및 개선" />
   </component>
 </project>
