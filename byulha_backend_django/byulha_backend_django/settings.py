@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# IP 허용: 전체, SW_414, DKU_WIFI, 핫스팟
+ALLOWED_HOSTS = ['*', '220.149.255.6', '175.119.165.6', '106.101.3.200']
 
 # Application definition
 
