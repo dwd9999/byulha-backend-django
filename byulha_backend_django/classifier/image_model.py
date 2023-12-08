@@ -2,11 +2,15 @@ import os
 
 from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
+import tensorflow as tf
 import numpy as np
 
 
 def img_model(image):
     np.set_printoptions(suppress=True)
+
+    # Tensorflow CPU 설정
+    tf.config.threading.set_inter_op_parallelism_threads(2)
 
     model = load_model(f"{os.getcwd()}/model/keras_model.h5", compile=False)
 
