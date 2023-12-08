@@ -19,7 +19,6 @@ def post(request):
 
         # 모델
         category_percent = img_model(response['Body'])
-        # category_name = 'SPORTY:50,asdf:49.7,werscv:30'
 
         # 데이터 json 형식 변환
         data_to_send = {
