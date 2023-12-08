@@ -1,44 +1,43 @@
+import os
+
 from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
 
-# Disable scientific notation for clarity
-np.set_printoptions(suppress=True)
 
-# Load the model
-model = load_model("/content/drive/MyDrive/Colab Notebooks/Nets/keras_model.h5", compile=False)
+def img_model(image):
+    np.set_printoptions(suppress=True)
 
-# Load the labels
-class_names = open("/content/drive/MyDrive/Colab Notebooks/Nets/labels.txt", "r").readlines()
+    model = load_model(f"{os.getcwd()}/model/keras_model.h5", compile=False)
 
-# Create the array of the right shape to feed into the keras model
-# The 'length' or number of images you can put into the array is
-# determined by the first position in the shape tuple, in this case 1
-data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+    class_names = open(f"{os.getcwd()}/model/labels.txt", "r", encoding='UTF8').readlines()
 
-# Replace this with the path to your image
-image = Image.open("/content/drive/MyDrive/Colab Notebooks/Nets/t.jpg").convert("RGB")
+    data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-# resizing the image to be at least 224x224 and then cropping from the center
-size = (224, 224)
-image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
+    image = Image.open(image).convert("RGB")
 
-# turn the image into a numpy array
-image_array = np.asarray(image)
+    size = (224, 224)
+    image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
 
-# Normalize the image
-normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
+    image_array = np.asarray(image)
 
-# Load the image into the array
-data[0] = normalized_image_array
+    normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
 
-# Predicts the model
-prediction = model.predict(data)
-index = np.argmax(prediction)
-class_name = class_names[index]
-confidence_score = prediction[0][index]
+    data[0] = normalized_image_array
 
-# Print prediction and confidence score
-print(prediction)
-print("Class:", class_name, end="")
-print("Confidence Score:", confidence_score)
+    prediction = model.predict(data)
+
+
+    # argsort를 사용해 값을 내림차순으로 정렬하고 상위 3개의 인덱스 추출
+    top_3_indices = np.argsort(prediction.ravel())[-3:][::-1]
+
+    # 상위 3개의 값과 해당 인덱스
+    top_3_values = prediction.ravel()[top_3_indices]
+    print(list(zip(top_3_indices, top_3_values)))
+
+    index = np.argmax(prediction)
+
+    class_name = class_names[index]
+    confidence_score = prediction[0][index]
+
+    return class_name, confidence_score

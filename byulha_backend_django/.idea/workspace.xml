@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Feat: Websocket 대신 Post 메시지 사용">
+    <list default="true" id="e5d97513-3d3e-44b3-8bd7-fc3495b55972" name="변경" comment="Feat: 이미지 모델 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/image_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/image_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keras_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/keras_model.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model/labels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,7 @@
       <workItem from="1701842000114" duration="866000" />
       <workItem from="1701842882391" duration="935000" />
       <workItem from="1701843835935" duration="10176000" />
-      <workItem from="1701908975380" duration="5648000" />
+      <workItem from="1701908975380" duration="9747000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: Websocket 대신 Post 메시지 사용">
       <option name="closed" value="true" />
@@ -133,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701851189342</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Feat: 이미지 모델 변경">
+      <option name="closed" value="true" />
+      <created>1701931661217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701931661217</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feat: Websocket 대신 Post 메시지 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: Websocket 대신 Post 메시지 사용" />
+    <MESSAGE value="Feat: 이미지 모델 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: 이미지 모델 변경" />
   </component>
 </project>
