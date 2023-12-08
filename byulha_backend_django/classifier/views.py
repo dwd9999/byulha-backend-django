@@ -8,10 +8,20 @@ from byulha_backend_django.settings import S3_ACCESS_KEY, S3_SECRET_KEY, S3_BUCK
 from classifier.image_model import img_model
 
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
+
 @csrf_exempt
 def post(request):
     try:
         request_json = json.loads(request.body)
+        print(get_client_ip(request))
 
         # S3 접근
         s3_client = boto3.client('s3', aws_access_key_id=S3_ACCESS_KEY, aws_secret_access_key=S3_SECRET_KEY)
