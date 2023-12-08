@@ -27,17 +27,11 @@ def img_model(image):
 
     prediction = model.predict(data)
 
-
-    # argsort를 사용해 값을 내림차순으로 정렬하고 상위 3개의 인덱스 추출
+    # 내림차 정렬 후 상위 3개 항목 추출
     top_3_indices = np.argsort(prediction.ravel())[-3:][::-1]
+    top_3_categories = [class_names[x] for x in top_3_indices]
 
-    # 상위 3개의 값과 해당 인덱스
+    # 상위 3개 항목 모델 결과
     top_3_values = prediction.ravel()[top_3_indices]
-    print(list(zip(top_3_indices, top_3_values)))
 
-    index = np.argmax(prediction)
-
-    class_name = class_names[index]
-    confidence_score = prediction[0][index]
-
-    return class_name, confidence_score
+    return ",".join([x + str(y) for x, y in zip(top_3_categories, top_3_values)])
