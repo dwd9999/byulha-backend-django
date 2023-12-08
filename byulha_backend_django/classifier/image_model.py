@@ -36,4 +36,4 @@ def img_model(image):
     # 상위 3개 항목 모델 결과
     top_3_values = prediction.ravel()[top_3_indices]
 
-    return ",".join([x + str(y) for x, y in zip(top_3_categories, top_3_values)])
+    return ",".join([x + ":" + str(round(y, 3)) for x, y in zip(top_3_categories, top_3_values)])
