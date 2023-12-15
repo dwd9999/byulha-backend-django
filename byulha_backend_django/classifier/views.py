@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from byulha_backend_django.settings import S3_ACCESS_KEY, S3_SECRET_KEY, S3_BUCKET_NAME
-from classifier.image_model import img_model
+from classifier.image_model import model_setting
 
 
 def get_client_ip(request):
@@ -28,7 +28,7 @@ def post(request):
         response = s3_client.get_object(Bucket=S3_BUCKET_NAME, Key='/' + request_json['fileId'])
 
         # 모델
-        category_percent = img_model(response['Body'])
+        category_percent = model_setting(response['Body'])
 
         # 데이터 json 형식 변환
         data_to_send = {
