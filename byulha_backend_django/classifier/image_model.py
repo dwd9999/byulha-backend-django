@@ -1,12 +1,31 @@
 import os
+from functools import lru_cache
 
 from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import tensorflow as tf
 import numpy as np
 
+data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-def img_model(image):
+
+def model_setting(image):
+    global data
+    rgb_image = Image.open(image).convert("RGB")
+    size = (224, 224)
+    fit_image = ImageOps.fit(rgb_image, size, Image.Resampling.LANCZOS)
+
+    data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+    image_array = np.asarray(fit_image)
+    normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
+    data[0] = normalized_image_array
+    return img_model(data.tobytes())
+
+
+@lru_cache
+def img_model(byte_data):
+    global data
+    data_restore = np.frombuffer(byte_data, dtype=data.dtype).reshape(data.shape)
     np.set_printoptions(suppress=True)
 
     # Tensorflow CPU 설정
@@ -20,14 +39,8 @@ def img_model(image):
     class_names = [x.strip() for x in class_names]
 
     # 모델
-    data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-    image = Image.open(image).convert("RGB")
-    size = (224, 224)
-    image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
-    image_array = np.asarray(image)
-    normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
-    data[0] = normalized_image_array
-    prediction = model.predict(data)
+    data_array = np.array(data_restore)
+    prediction = model.predict(data_array)
 
     # 내림차 정렬 후 상위 3개 항목 추출
     top_3_indices = np.argsort(prediction.ravel())[-3:][::-1]
